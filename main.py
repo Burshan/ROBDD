@@ -48,14 +48,14 @@ if __name__ == "__main__":
     print()
 
     # --- Additional Formula ---
-    # Formula: a ⊕ b ⊕ c ⊕ d ⊕ e (XOR of all variables)
+    # Formula: (p → q) ∧ (q → r) - Implication chain
     print("=" * 70)
-    print("Building ROBDD for Additional Formula: a ⊕ b ⊕ c ⊕ d ⊕ e")
+    print("Building ROBDD for Additional Formula: (p → q) ∧ (q → r)")
     print("=" * 70)
-    expr_d = "a ^ b ^ c ^ d ^ e"
+    expr_d = "(not p or q) and (not q or r)"
 
     bdd_d = ROBDD()
-    bdd_d.construct_bdd(expr_d, ['a', 'c', 'b', 'd', 'e'])
+    bdd_d.construct_bdd(expr_d, ['p', 'q', 'r'])
     print(f"Number of nodes: {bdd_d.node_count()}")
     bdd_d.render_to_file("task_d.dot")
     bdd_d.render_to_image("task_d.png")

@@ -12,7 +12,7 @@ ROBDD_Project/
 ├── task_a.png      # Formula A: (a ∧ ¬c) ∨ (b ⊕ d) - 7 nodes
 ├── task_b.png      # Formula B: |{x1,x2,x3,x4,x5}| ≥ 3 - 11 nodes
 ├── task_c.png      # Formula C: x > y (3-bit) - 10 nodes
-└── task_d.png      # Additional: a ⊕ b ⊕ c ⊕ d ⊕ e - 11 nodes
+└── task_d.png      # Additional: (p → q) ∧ (q → r) - 6 nodes
 ```
 
 ## Functionality
@@ -50,7 +50,7 @@ This generates DOT files and PNG images for all 4 formulas.
 | (a ∧ ¬c) ∨ (b ⊕ d) | a,b,c,d | a>c>b>d | 7 |
 | At least 3 true | x1-x5 | x1>x2>x3>x4>x5 | 11 |
 | x > y (3-bit) | x1-x3,y1-y3 | x3>y3>x2>y2>x1>y1 | 10 |
-| XOR all | a,b,c,d,e | a>c>b>d>e | 11 |
+| (p → q) ∧ (q → r) | p,q,r | p>q>r | 6 |
 
 ## Visualizations
 
