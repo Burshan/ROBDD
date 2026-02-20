@@ -52,6 +52,14 @@ This generates DOT files and PNG images for all 4 formulas.
 | x > y (3-bit) | x1-x3,y1-y3 | x3>y3>x2>y2>x1>y1 | 10 |
 | (p → q) ∧ (q → r) | p,q,r | p>q>r | 6 |
 
+## AI Acknowledgement
+
+Artificial Intelligence tools were used as a supportive aid during the development for the following purposes:
+
+Code Structure and Debugging: Assisting in understanding the ROBDD implementation logic and overall package structure, as well as helping identify and fix technical issues.
+
+Formula Translation Support: Assisting in translating mathematical Boolean formulas into Python-compatible syntax.
+
 ## Visualizations
 
 ![Formula A](task_a.png)
